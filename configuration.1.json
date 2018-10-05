@@ -1,0 +1,19 @@
+{
+    "ReRoutes": [{
+        "DownstreamHostAndPorts": [
+            {
+                "Host": "localhost",
+                "Port": 5050
+            }
+        ],
+        "DownstreamPathTemplate": "/",
+        "UpstreamPathTemplate": "/",
+        "UpstreamHttpMethod": [],
+        "ReRouteIsCaseSensitive": false,
+        "DownstreamScheme": "http",
+        "AuthenticationOptions": {
+            "AuthenticationProviderKey": "TestKey",
+            "AllowedScopes": []
+        }
+    }]
+}

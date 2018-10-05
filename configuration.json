@@ -1,0 +1,43 @@
+{
+    "ReRoutes": [{
+        "DownstreamHostAndPorts": [
+            {
+                "Host": "localhost",
+                "Port": 5051
+            }
+        ],
+        "DownstreamPathTemplate": "/static/{url}",
+        "UpstreamPathTemplate": "/{url}",
+        "UpstreamHttpMethod": [],
+        "ReRouteIsCaseSensitive": false,
+        "DownstreamScheme": "http"
+    }, {
+        "DownstreamHostAndPorts": [
+            {
+                "Host": "localhost",
+                "Port": 5050
+            }
+        ],
+        "DownstreamPathTemplate": "/api/{everything}",
+        "UpstreamPathTemplate": "/api/{everything}",
+        "UpstreamHttpMethod": [],
+        "ReRouteIsCaseSensitive": false,
+        "DownstreamScheme": "http"
+    }, {
+        "DownstreamHostAndPorts": [
+            {
+                "Host": "localhost",
+                "Port": 5051
+            }
+        ],
+        "DownstreamPathTemplate": "/personal",
+        "UpstreamPathTemplate": "/personal",
+        "UpstreamHttpMethod": [],
+        "ReRouteIsCaseSensitive": false,
+        "DownstreamScheme": "http",
+        "AuthenticationOptions": {
+            "AuthenticationProviderKey": "AuthKey",
+            "AllowedScopes": []
+        }
+    }]
+}
