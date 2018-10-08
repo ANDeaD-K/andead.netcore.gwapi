@@ -19,7 +19,7 @@ namespace andead.netcore.gwapi
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .ConfigureAppConfiguration(ic => ic.AddJsonFile("configuration.json"))
+                .ConfigureAppConfiguration(ic => ic.AddJsonFile("configuration.json", true, true))
                 .UseStartup<Startup>();
     }
 }
