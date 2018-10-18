@@ -38,6 +38,10 @@
         "AuthenticationOptions": {
             "AuthenticationProviderKey": "AuthKey",
             "AllowedScopes": []
+        },
+        "AddQueriesToRequest": {
+            "userId": "Claims[http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier] > value",
+            "login": "Claims[http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name] > value"
         }
     }]
 }
